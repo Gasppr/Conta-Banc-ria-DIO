@@ -7,6 +7,7 @@ public class Main {
 
         ContaBancaria usuario1 = new ContaBancaria();
 
+        usuario1.sistema();
 
 
 
