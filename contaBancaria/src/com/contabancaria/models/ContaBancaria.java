@@ -9,6 +9,26 @@ public class ContaBancaria {
     private double saldo;
 
 
+    public ContaBancaria() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Por favor, digite o número da Agência !");
+        this.agencia = sc.next();
+
+        System.out.println("Por favor, digite o número da conta!");
+        this.numero = sc.nextInt();
+
+        System.out.println("Por favor, digite o seu nome!");
+        this.nomeCliente = sc.next();
+
+        this.saldo = 0;
+
+        System.out.println("Olá "+ this.nomeCliente + ", obrigado por criar uma conta em nosso banco," +
+                " sua agência é "+ this.agencia +", conta " + this.numero + " e seu saldo "+ this.saldo +" já está disponível" +
+                " para saque");
+    }
+
+
 
     public void transferir(double quantia){
 
@@ -51,4 +71,5 @@ public class ContaBancaria {
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
+
 }
